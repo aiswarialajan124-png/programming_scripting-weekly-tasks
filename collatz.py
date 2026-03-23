@@ -1,4 +1,4 @@
-# Ask user for positie integer
+# Ask user to enter a positive integer
 num = int(input("Enter a positive integer: "))
 
 # Keep going until number becomes 1
