@@ -9,8 +9,11 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 import sys
 import os
 
-# Check that one command line arguement is provided
-if len(sys.argv) != 2:
+# Constant for expected number of arguments
+EXPECTED_ARGS = 2
+
+# Check that one command line argument is provided 
+if len(sys.argv) != EXPECTED_ARGS:
     print("Error: No filename provided")
     sys.exit()
 
@@ -22,7 +25,7 @@ if not filename.endswith(".txt"):
     print("Error: File must be a .txt file")
     sys.exit()
 
-# Check to see if it is in system
+# Check if file exists
 if not os.path.isfile(filename):
     print("Error: File does not exist")
     sys.exit()

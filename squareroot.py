@@ -6,26 +6,29 @@ References:  https://docs.python.org/3/library/math.html#math.sqrt
 https://realpython.com/python-square-root-function/
 """
 
+# Constant for precision
+PRECISION = 0.00001
+
 # function to calculate square root
 def sqrt(number):
     guess = number / 2
 
     while True:
-        newGuess = (guess + number / guess) / 2
+        new_guess = (guess + number / guess) / 2
 
-        if abs(newGuess - guess) < 0.00001:
-            return newGuess
+        if abs(new_guess - guess) < PRECISION:
+            return new_guess
         
-        guess = newGuess
+        guess = new_guess
 
 
 # the main program
 num = float(input("Please enter a positive number: "))
 
-# to check if number is positive
+# check if number is positive
 if num < 0:
     print("Please enter a positive number")
 
 else:
     result = sqrt(num)
-    print(f"The square root of {num} is approx. { round(result,1)}.")
+    print(f"The square root of {num} is approx. {round(result,1)}.")
