@@ -2,7 +2,7 @@
 
 This program checks the current day of the week and prints whether it is a weekday or a weekend.
 
-References: https://docs.python.org/3/library/datetime.html"""
+References: https://docs.python.org/3/library/datetime.html """
 
 import datetime
 

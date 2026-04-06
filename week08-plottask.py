@@ -2,7 +2,7 @@
 
 This program generates a histogram of 1000 random values drawn from a normal distribution and plots the function h(x) = x^3 on the same graph.The resulting plot is saved as an image file called "week08-plot.png" 
 
-References: https://matplotlib.org/stable/tutorials/pyplot.html#sphx-glr-tutorials-pyplot-py"""
+References: https://matplotlib.org/stable/tutorials/pyplot.html#sphx-glr-tutorials-pyplot-py """
 
 import numpy as np
 import matplotlib.pyplot as plt

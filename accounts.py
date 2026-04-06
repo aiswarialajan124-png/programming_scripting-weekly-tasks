@@ -7,7 +7,7 @@ References: https://docs.python.org/3/tutorial/controlflow.html """
 # Asks to enter accountnumber
 account_number = input("Enter account number: ")
 
-# The last four digits of number inputted is shown, the other numbers are hidden with X
+# The last 4 digits of number inputted is shown, the other numbers are hidden with X
 if len(account_number) <= 4:
     masked = account_number
 else:
