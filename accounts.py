@@ -2,7 +2,7 @@
 
 This program takes a 10-digit account number as input and hides all but the last four digits using 'X'. If the account number is less than or equal to 4 digits, it will display the number as is without masking.
 
-References: https://docs.python.org/3/tutorial/controlflow.html"""
+References: https://docs.python.org/3/tutorial/controlflow.html """
 
 # Asks to enter accountnumber
 account_number = input("Enter account number: ")
